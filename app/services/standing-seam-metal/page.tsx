@@ -1,0 +1,13 @@
+export default function StandingSeamPage() {
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-16">
+      <h1 className="text-4xl font-extrabold tracking-tight">
+        Standing Seam Metal Roofing
+      </h1>
+      <p className="mt-3 text-slate-700">
+        Clean lines, exceptional durability, and energy efficiency. Installed by
+        experienced pros.
+      </p>
+    </main>
+  );
+}

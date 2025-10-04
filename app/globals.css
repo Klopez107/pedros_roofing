@@ -3,6 +3,41 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brand: #8b0000; /* deep red */
+}
+
 a {
   @apply hover:opacity-90;
+}
+
+/* Soft site background: faint radial tints + gentle gradient */
+.site-bg {
+  background: radial-gradient(
+      circle at 20% 10%,
+      rgba(2, 6, 23, 0.03),
+      transparent 25%
+    ),
+    radial-gradient(circle at 80% 0%, rgba(185, 28, 28, 0.04), transparent 30%),
+    radial-gradient(circle at 0% 80%, rgba(2, 6, 23, 0.03), transparent 25%),
+    linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+
+/* Dotted accent you can drop anywhere (uses currentColor for dot color) */
+.bg-dots {
+  background-image: radial-gradient(currentColor 0.6px, transparent 0.6px);
+  background-size: 16px 16px;
+}
+
+/* Divider between sections */
+.section-divider {
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(2, 6, 23, 0) 0%,
+    rgba(2, 6, 23, 0.35) 50%,
+    rgba(2, 6, 23, 0) 100%
+  );
+  margin: 3.5rem 0; /* ~my-14 */
+  opacity: 0.5;
 }

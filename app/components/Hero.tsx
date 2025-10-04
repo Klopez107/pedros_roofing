@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative isolate">
+    <section className="relative isolate bg-gradient-to-br from-red-700/10 via-white to-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow">
           <Image
-            src="/images/img_4.jpg"
+            src="/images/img_1.jpg"
             alt="Roofing project"
             fill
             className="object-cover"

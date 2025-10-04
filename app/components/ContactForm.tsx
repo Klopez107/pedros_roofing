@@ -31,7 +31,10 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact">
+    <section
+      id="contact"
+      className="relative isolate bg-gradient-to-tl from-red-700/10 via-white to-slate-50"
+    >
       <div className="mx-auto max-w-6xl px-4 py-16">
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-3xl font-bold">Get a free quote</h2>

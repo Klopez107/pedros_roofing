@@ -1,15 +1,7 @@
+import Link from "next/link";
+import { cities } from "../lib/cities";
+
 export default function ServiceArea() {
-  const cities = [
-    "Marion, NC",
-    "Asheville, NC",
-    "Hickory, NC",
-    "Charlotte, NC",
-    "Boone, NC",
-    "Weaverville, NC",
-    "Old Fort, NC",
-    "Spruce Pine, NC",
-    "Black Mountain, NC",
-  ];
   return (
     <section id="service-area" className="bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-16">
@@ -20,10 +12,10 @@ export default function ServiceArea() {
         <ul className="mt-6 grid gap-2 sm:grid-cols-2 md:grid-cols-3">
           {cities.map((c) => (
             <li
-              key={c}
-              className="rounded-xl border border-slate-200 bg-white px-4 py-2 shadow-sm"
+              key={c.slug}
+              className="rounded-xl border border-slate-200 bg-white px-4 py-2 shadow-sm hover:bg-red-50 hover:border-red-200 transition"
             >
-              {c}
+              <Link href={`/service-area/${c.slug}`}>{c.label}</Link>
             </li>
           ))}
         </ul>
