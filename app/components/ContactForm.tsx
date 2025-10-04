@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const CONTACT_FORMSPREE_ENDPOINT = "https://formspree.io/f/yourEndpointHere"; // <-- replace me
+const CONTACT_FORMSPREE_ENDPOINT = "https://formspree.io/f/xovkljvj";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<

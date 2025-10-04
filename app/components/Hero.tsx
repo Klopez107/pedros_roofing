@@ -27,13 +27,19 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow">
-          <Image
-            src="/images/img_1.jpg"
-            alt="Roofing project"
-            fill
-            className="object-cover"
-          />
+        <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow ring-1 ring-slate-200">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover"
+          >
+            <source src="/videos/mov_3.mp4" type="video/mp4" />
+            {/* <source src="/videos/hero.webm" type="video/webm" /> */}
+            {/* Optional: fallback text */}
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>

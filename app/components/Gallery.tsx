@@ -46,8 +46,11 @@ export default function Gallery() {
   };
 
   const imgs = [
-    { src: "/images/img_4.jpg", alt: "Shingle roof ridge" },
-    { src: "/images/img_2.jpg", alt: "New construction roof" },
+    { src: "/images/img_12.jpeg", alt: "Shingle roof ridge" },
+    { src: "/images/img_13.jpg", alt: "New construction roof" },
+    { src: "/images/img_7.jpg", alt: "Metal roof detail" },
+    { src: "/images/img_10.jpg", alt: "Shingle roof ridge" },
+    { src: "/images/img_5.jpg", alt: "New construction roof" },
     { src: "/images/img_3.jpg", alt: "Metal roof detail" },
   ];
 

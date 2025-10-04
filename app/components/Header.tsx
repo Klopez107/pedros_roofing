@@ -16,7 +16,7 @@ export default function Header() {
             height={44}
           />
           <span className="font-extrabold tracking-tight text-xl">
-            Pedro&apos;s Roofing
+            Pedro&apos;s Professional Roofing
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">

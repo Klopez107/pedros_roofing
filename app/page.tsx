@@ -8,9 +8,7 @@ import ServiceArea from "./components/ServiceArea";
 import FAQ from "./components/FAQ";
 import ContactForm from "./components/ContactForm";
 import StickyCall from "./components/StickyCall";
-import Footer from "./components/Footer";
 
-import SectionDivider from "./components/SectionDivider";
 import FadeIn from "./components/FadeIn";
 
 export default function HomePage() {
@@ -46,7 +44,6 @@ export default function HomePage() {
         </FadeIn>
       </main>
       <StickyCall />
-      <Footer />
     </>
   );
 }
